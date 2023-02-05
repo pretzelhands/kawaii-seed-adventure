@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/lavender.png" type="Texture" id=1]
+[ext_resource path="res://scripts/lavender.gd" type="Script" id=2]
+
+[node name="lavender" type="StaticBody2D"]
+script = ExtResource( 2 )
+
+[node name="collision_shape" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PoolVector2Array( -43, 317, -43, 307, -16, 222, 14, 112, 15, 108, 40, 85, 50, 45, 45, 23, 47, -22, 49, -79, 52, -138, 45, -159, 53, -202, 55, -262, 54, -276, 38, -268, 28, -284, 15, -271, 7, -267, -1, -277, -10, -273, -10, -248, -10, -225, -12, -209, -24, -209, -15, -190, -14, -153, -14, -130, -17, -115, -27, -113, -21, -92, -10, -69, -16, -48, -17, -34, -27, -39, -24, -24, -22, 4, -19, 27, -20, 54, -19, 60, -29, 58, -32, 64, -15, 86, 0, 98, -38, 236, -58, 298, -60, 318 )
+
+[node name="sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

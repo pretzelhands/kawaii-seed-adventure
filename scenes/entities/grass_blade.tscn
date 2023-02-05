@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/grass_blade.png" type="Texture" id=1]
+[ext_resource path="res://scripts/grass_blade.gd" type="Script" id=2]
+
+[node name="grass_blade" type="StaticBody2D"]
+script = ExtResource( 2 )
+
+[node name="collision_shape" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -159, -22, 12, -23, 90, -17, 138, -8, 148, -1, 134, 0, 108, -1, 77, -2, 52, -1, -29, 6, -63, 10, -110, 23, -118, 25, -160, 24 )
+
+[node name="sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

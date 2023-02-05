@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/down_button.png" type="Texture" id=1]
+[ext_resource path="res://assets/right_button.png" type="Texture" id=2]
+[ext_resource path="res://assets/start.png" type="Texture" id=3]
+[ext_resource path="res://assets/up_button.png" type="Texture" id=4]
+[ext_resource path="res://scripts/start.gd" type="Script" id=5]
+[ext_resource path="res://assets/left_button.png" type="Texture" id=6]
+
+[node name="start" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 320, 512 )
+texture = ExtResource( 3 )
+
+[node name="LeftButton" type="Sprite" parent="."]
+position = Vector2( 272, 526 )
+texture = ExtResource( 6 )
+
+[node name="RightButton" type="Sprite" parent="."]
+position = Vector2( 340, 526 )
+texture = ExtResource( 2 )
+
+[node name="UpButton" type="Sprite" parent="RightButton"]
+position = Vector2( -34, -42 )
+texture = ExtResource( 4 )
+
+[node name="DownButton" type="Sprite" parent="RightButton/UpButton"]
+position = Vector2( 0, 40 )
+texture = ExtResource( 1 )
